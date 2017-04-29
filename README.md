@@ -1,6 +1,10 @@
 # React-Native
 A short Welcome tutorial of React-Native
 
+## Before running application First set up the requirments
+Read **Requirements for React-Native** Then read **run React-native**
+  
+  
 # To run React-Native application 
 
   ## Install React-Native 

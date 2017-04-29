@@ -1,0 +1,57 @@
+	To run React-native application on Android Device , use this method
+
+//	NODE
+0. check nodejs & npm version
+	node -v
+	npm -v
+
+//	ADB	
+1. check adb is installed or not
+	adb version
+
+2. check same adb is running on
+	cd ~/Android/Sdk/platform-tools/
+	./adb version
+
+3. if both adb are same then u r free from build error 
+	"Adb server version (32) doesn't match this client (39)"	//value is depended on adb
+
+//	REACT-NATIVE
+4. install react native
+	npm install -g react-native-cli
+
+//	ANDROID DEVELOPMENT ENVIRONMENT
+5. Download 
+	- Android Studio 	//provide SDK and AVD(requires for testing react-native apps)
+	- Choose 'Custom' installation when running Android Studio
+	- check
+		-Android SDK
+		-Android SDK Platform
+		-Android Virtual Device
+	- React Native require 'Android 6.0 Marshmallow' 
+	- From SDK manager , Check packages in SDK platforms
+		-Google APIs
+		-Android SDK Platform 23
+		-Intel x86 Atom_64 System Image
+		-Google APIs Intel x86 Atom_64 System Image
+  Setup the ANDROID_HOME
+	cd ~/.profile
+	-paste these codes 
+		-export ANDROID_HOME=${HOME}/Android/Sdk
+		-export PATH=${PATH}:${ANDROID_HOME}/tools
+		-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+	-save it and recheck it.
+
+6. For Virtual Device 
+	-from android studio , avd manager, create new virtual device 
+	-Choose "Android 6.0 - API Level 23" under Device
+	-Choose "Intel Atom (x86_64)" under CPU/ABI.
+	-Click OK, then select your new AVD and click "Start...", and finally, "Launch".
+
+7. For using a Real Device
+	-enable USB debugging from developer menu and connect device with usb
+
+
+
+
+

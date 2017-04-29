@@ -1,0 +1,11 @@
+
+1. To run react-native application on ur device 
+	
+	-mkdir ReactNative
+	-cd ReactNative
+
+	-react-native init AwesomeProject
+	-cd AwesomeProject
+	-react-native run-android
+	-react-native start	|| react-native start --reset-cache
+
